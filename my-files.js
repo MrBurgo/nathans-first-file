@@ -16,11 +16,20 @@ const filename = path.join(__dirname, 'text.txt');
 //
 // console.log(chalk.yellow('Hello!'))
 
-fs.readFile(filename, 'utf8', (err, data) => {
-  if (err) {
-    return console.log(err);
-  }
-  const lines = data.split('\n').filter(x => x.length > 0);
 
-  console.log(lines)
-})
+// fs.readFile(filename, 'utf8', (err, data) => {
+//   if (err) {
+//     return console.log(err);
+//   }
+//   const lines = data.split('\n').filter(x => x.length > 0);
+//
+//   console.log(lines)
+// })
+
+
+try {
+  const syncContents = fs.readFileSync(filename, 'utf8')
+  console.log(chalk.cyan(syncContents))
+} catch (err) {
+  console.log(chalk.red(err))
+}
