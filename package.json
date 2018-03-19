@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/MrBurgo/nathans-first-file/issues"
   },
-  "homepage": "https://github.com/MrBurgo/nathans-first-file#readme"
+  "homepage": "https://github.com/MrBurgo/nathans-first-file#readme",
+  "dependencies": {
+    "chalk": "^2.3.2"
+  }
 }

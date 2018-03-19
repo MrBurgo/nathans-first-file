@@ -57,5 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
-# mac crap
-.DS_store
+# macOS junk
+.DS_Store
+
+# lock files
+package-lock.json
